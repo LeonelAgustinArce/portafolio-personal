@@ -1,4 +1,4 @@
-export default function Avatar({ size = 320, src = "/perfil.svg" }: { size?: number; src?: string }) {
+export default function Avatar({ size = 320, src = "/perfil.jpg" }: { size?: number; src?: string }) {
   const imageSrc = src || `https://api.dicebear.com/9.x/initials/svg?seed=LA&backgroundColor=262626&fontFamily=monospace&fontSize=38&textColor=9CA3AF&size=${size}`;
 
   return (
