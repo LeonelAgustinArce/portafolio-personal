@@ -148,7 +148,7 @@ export default function Hero() {
                 filter: "blur(6px)",
               }} />
               <div className="relative z-10">
-                <Avatar size={280} src="/profile.jpg" />
+                <Avatar size={280} />
               </div>
               <div
                 className="absolute -bottom-4 -left-4 px-4 py-2 rounded-xl text-xs font-medium z-20"
