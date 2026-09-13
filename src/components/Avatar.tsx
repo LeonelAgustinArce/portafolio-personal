@@ -1,4 +1,4 @@
-import profileImage from "../assets/profile.png";
+import op1Image from "../assets/op1.jpg";
 
 export default function Avatar({
   size = 320,
@@ -7,7 +7,7 @@ export default function Avatar({
   size?: number;
   src?: string;
 }) {
-  const imageSrc = src ?? profileImage;
+  const imageSrc = src ?? op1Image;
 
   return (
     <div
