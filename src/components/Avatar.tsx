@@ -1,7 +1,13 @@
-import profileImage from "../assets/profile.jpg";
+import profileImage from "../assets/profile.png";
 
-export default function Avatar({ size = 320, src = profileImage }: { size?: number; src?: string }) {
-  const imageSrc = src || profileImage;
+export default function Avatar({
+  size = 320,
+  src,
+}: {
+  size?: number;
+  src?: string;
+}) {
+  const imageSrc = src ?? profileImage;
 
   return (
     <div
@@ -20,7 +26,10 @@ export default function Avatar({ size = 320, src = profileImage }: { size?: numb
         width={size}
         height={size}
         className="w-full h-full object-cover"
-        style={{ transform: "scale(1.13) translateY(16px) translateX(2px)", objectPosition: "center 30%" }}
+        style={{
+          transform: "scale(1.13) translateY(16px) translateX(2px)",
+          objectPosition: "center 30%",
+        }}
       />
     </div>
   );
