@@ -1,0 +1,10 @@
+{
+  "description": "Responsive personal portfolio site showcasing a software developer's skills, projects, and contact info with dark/light theme toggle for professional presentation.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
