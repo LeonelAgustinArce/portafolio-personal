@@ -1,4 +1,4 @@
-import op1Image from "../assets/op1.jpg";
+import perfilImage from "../assets/perfil.jpg";
 
 export default function Avatar({
   size = 320,
@@ -7,7 +7,7 @@ export default function Avatar({
   size?: number;
   src?: string;
 }) {
-  const imageSrc = src ?? op1Image;
+  const imageSrc = src ?? perfilImage;
 
   return (
     <div
@@ -16,7 +16,8 @@ export default function Avatar({
         width: size,
         height: size,
         border: "1px solid rgba(255,255,255,0.18)",
-        background: "linear-gradient(135deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02))",
+        background:
+          "linear-gradient(135deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02))",
         boxShadow: "0 18px 35px rgba(0,0,0,0.10)",
       }}
     >
@@ -26,6 +27,9 @@ export default function Avatar({
         width={size}
         height={size}
         className="w-full h-full object-cover"
+        loading="eager"
+        fetchPriority="high"
+        decoding="async"
         style={{
           transform: "scale(1.13) translateY(16px) translateX(2px)",
           objectPosition: "center 30%",
