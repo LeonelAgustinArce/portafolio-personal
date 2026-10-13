@@ -5,7 +5,7 @@ export const educationData: EducationItem[] = [
     institution: "UNAHUR",
     degree: "Tecnicatura Universitaria en Programación",
     period: "Ago 2022 — Actualidad",
-    status: "Pronto a recibirse",
+    status: "Pronto a recibirme",
   },
   {
     institution: "UNAHUR",
